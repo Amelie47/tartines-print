@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#form-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #b5c1c5;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 24px;
+}
+
+#logo {
+    height: 80px;
+}
+
+#desc {
+    text-align: center;
+    max-width: 800px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+    border: none;
+    font-size: 14px;
+}
+
+button {
+    background-color: #e85c60;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d23035;
+}
+
+#error {
+    color: red;
+}
+
+td {
+    height: calc(50px + 2 * 4px);
+}
+
+table img {
+    height: 50px;
+    width: 70px;
+    object-fit: cover;
+}
+
+#table-container {
+    width: 80%;
+    overflow-x: auto;
+    display: none;
+}
+
+#scroll-container {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Appliquer un style de base au tableau */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 800px;
+}
+
+/* Styliser les cellules du tableau */
+td,
+th {
+    border: 1px solid #b5c1c5;
+    padding: 4px;
+    text-align: left;
+}
+
+/* Ajouter une couleur de fond aux cellules de l'en-tête */
+th {
+    background-color: white;
+}
+
+/* Appliquer une couleur de fond alternative aux lignes du tableau */
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+/* Appliquer une couleur de fond alternative aux lignes du tableau */
+tr:nth-child(odd) {
+    background-color: gainsboro;
+}
+
+/* Styliser la première colonne du tableau (par exemple, pour un effet de mise en évidence) */
+td:first-child {
+    font-weight: bold;
+}

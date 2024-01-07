@@ -4,8 +4,41 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Ma page de test</title>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    ceci est un test
+
+    <div id="form-container">
+
+      <img id="logo" src="logo.png" />
+
+      <p id="desc">Exporter les recettes sur <a href="https://manage.wix.com/dashboard/8e903fd9-2058-4a1c-99ed-ad4958889b7f/database/data/Recettes">Wix</a> et importer le fichier csv. Vous pouvez choisir une ou plusieurs recettes en même temps, avec autant de champs que vous le souhaitez</p>
+
+        <form onsubmit="submitForm(event)">
+            <input name="file" type="file" accept=".csv" />
+            <button type="submit">Envoyer</button>
+        </form>
+        <p id="error"></p>
+        <div id="table-container">
+            <div id="scroll-container">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Nom</th>
+                        <th>Image</th>
+                        <th>Préparation</th>
+                        <th>Cuisson</th>
+                        <th>Portions</th>
+                        <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
